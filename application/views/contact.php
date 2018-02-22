@@ -14,13 +14,13 @@
             <div class="col-sm-4 col-lg-4 col-md-4">
                 <div class="our-team">
                     <h2 class="sub-section-title">
-                        cyberbatt (cyberbatt.com)
+                        wisasocks (wisasocks.com)
                     </h2>
                     <address>
                         <p><i class="fa fa-map-marker"></i>  บริษัท ไซเบอร์ แบต จำกัด <br>2963 ซ.ลาดพร้าว 101/2 ถ.ลาดพร้าว คลองจั่น บางกะปิ กทม. 10310 </p>
                         <p><i class="fa fa-phone"></i> Mobile: 091-7824565</p>
                         <p><i class="fa fa-envelope-o"></i> Email: <?php echo $this->config->item('email_owner') ?></p>
-                        <p><i class="fa fa-comment"></i> Line Id: <a href="http://line.me/ti/p/%40cyberbatt" target="_blank">@cyberbatt</a></p>
+                        <p><i class="fa fa-comment"></i> Line Id: <a href="http://line.me/ti/p/%40wisasocks" target="_blank">@wisasocks</a></p>
                     </address>
                 </div>
                   <div id="fb-root"></div>
@@ -32,8 +32,8 @@
                       fjs.parentNode.insertBefore(js, fjs);
                     }(document, 'script', 'facebook-jssdk'));</script>
                         <div class="add-banner-carsuol">
-                            <div class="fb-page" data-href="https://www.facebook.com/cyberbatt/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                                <blockquote cite="https://www.facebook.com/cyberbatt/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cyberbatt/">cyberbatt.com</a></blockquote>
+                            <div class="fb-page" data-href="https://www.facebook.com/wisasocks/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/wisasocks/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/wisasocks/">wisasocks.com</a></blockquote>
                             </div>
                         </div>
             </div>
@@ -43,7 +43,7 @@
                        สมัครตัวแทนจำหน่าย ติดต่อ
                     </h2>
                     <address>
-                        <p><i class="fa fa-comment"></i> Line Id: <a href="http://line.me/ti/p/%40cyberbatt" target="_blank">@cyberbatt</a></p>
+                        <p><i class="fa fa-comment"></i> Line Id: <a href="http://line.me/ti/p/%40wisasocks" target="_blank">@wisasocks</a></p>
 
                         <p><i class="fa fa-map-marker"></i>  ที่อยู่จัดส่งเอกสารทางบัญชี<br>
                         ชั้น 1 โซน B เลขที่ 396 ถ.ศรีวรา พลับพลา วังทองหลาง กทม.  10310
@@ -63,7 +63,7 @@
                 </h2>
               <address>
 
-                        <p><i class="fa fa-comment"></i> Line Id: <a href="http://line.me/ti/p/%40cyberbatt" target="_blank">@cyberbatt</a></p>
+                        <p><i class="fa fa-comment"></i> Line Id: <a href="http://line.me/ti/p/%40wisasocks" target="_blank">@wisasocks</a></p>
                         </address>
 
                          <h2 class="sub-section-title">

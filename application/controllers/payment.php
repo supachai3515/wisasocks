@@ -241,7 +241,7 @@ class Payment extends CI_Controller {
 	      {
 	      	$data['is_error'] = false;
 	      	$image_name  = $this->my_upload->file_dst_name;
-            $bodyText = $bodyText.'<img src="'.base_url('/').$dir_insert.$image_name.'" class="img-responsive" alt="Image"width="100%"><br>';
+            $bodyText = $bodyText.'<img src="'.base_url('/').$dir_insert.$image_name.'" class="img-responsive" alt="Image"><br>';
             //$this->load->view('template/layout', $data );
 
 	      }  else {
@@ -279,13 +279,14 @@ class Payment extends CI_Controller {
 	        $this->email->message($bodyText);
 	        if($this->email->send())
 		     {
-		     		$re['error'] = false;
-					$re['message'] = 'เราได้รับการแจ้งเชำระเงินเรียบร้อยแล้ว';
+		     		$data['is_error'] = false;
+					$data['message'] = 'เราได้รับการแจ้งเชำระเงินเรียบร้อยแล้ว';
 					//print json_encode($re);
 
 		     }
 		     else {
 		     		$data['is_error'] = true;
+						$data['message'] = 'การแจ้แจ้งชำระเงินผิดผลาดกรณาติดต่อช่องทางอื่น';
 			}
 	    }
 

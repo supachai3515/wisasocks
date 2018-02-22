@@ -45,7 +45,7 @@
 				    			<?php if ($dealerInfo['verify'] == 0): ?>
 				    				<?php echo '<p class="text-center"><strong class=" text-danger">กรุณารอทางร้านตรวจสอบการสมัครก่อน หากมีข้อสงสัยกรุณาติดต่อทางร้าน</strong></p>';?>
 				    			<?php endif ?>
-				        		
+
 				        	<?php endif ?>
 					        <?php if (count($orderList) > 0): ?>
 					        	<div class="table-responsive">
@@ -54,7 +54,7 @@
 					        				<tr>
 					        					<th>#</th>
 					        					<th>ข้อมูลการจัดส่ง</th>
-					        					<th>ยอดรวม</th>	        					
+					        					<th>ยอดรวม</th>
 					        					<th>link</th>
 					        				</tr>
 					        			</thead>
@@ -72,7 +72,7 @@
 					                				<?php if ($value['order_status_id'] ==  "1"): ?>
 					                					<a href="<?php echo base_url('payment/order/'.$value['ref_id']);?>">
 						                					<button type="button" class="btn btn-xs btn-warning">แจ้งชำระเงิน</button>
-						                				</a> 
+						                				</a>
 					                				<?php endif ?>
 					                			</td>
 					                			<td>
@@ -86,9 +86,9 @@
 					                			<td>
 					                				<a href="<?php echo base_url('invoice/'.$value['ref_id']);?>" target="_bank">
 					                					<button type="button" class="btn btn-xs btn-default">ดูใบเสร็จ</button>
-					                				</a> 
+					                				</a>
 					                				<br>
-					                			
+
 					                			</td>
 					                		</tr>
 						                <?php endforeach ?>
@@ -98,11 +98,11 @@
 					        <?php else: ?>
 					        	<?php echo '<p class="text-center"><strong class="text-center">ยังไม่มีรายการสั่งซื้อ</strong></p>';?>
 					        <?php endif ?>
-				    
+
 				    	</div><!--/order-->
 				    	 <div ng-if="editDealerForm == true">
 					    	<div class="signup-form">
-								<form ng-submit="savedealerEdit()"> 
+								<form ng-submit="savedealerEdit()">
 						            <div class="form-group">
 									    <label for="first_name">ชื่อจริง</label>
 									    <input ng-model="dealerEdit.first_name" class="form-control"  id="first_name" name="first_name" placeholder="ชื่อจริง"  required="required" type="text" >
@@ -111,13 +111,13 @@
 									 <div class="form-group">
 									    <label for="last_name">นามสกุลจริง</label>
 									    <input ng-model="dealerEdit.last_name" class="form-control"  id="last_name" name="last_name" placeholder="นามสกุลจริง"  required="required" type="text">
-									 
+
 									 </div>
 
 									 <div class="form-group">
 									    <label for="company">ชื่อร้านค้า</label>
-									    <input ng-model="dealerEdit.company" class="form-control"  id="company" name="company" placeholder="ชื่อจริง"  required="required" type="text">
-									 
+									    <input ng-model="dealerEdit.company" class="form-control"  id="company" name="company" placeholder="ชื่อจริง" type="text" hidden>
+
 									 </div>
 
 									 <div class="form-group">
@@ -131,8 +131,8 @@
 									 </div>
 
 									 <div class="form-group">
-									    <label for="tel">โทรศัพท์บ้านหรือ Fax</label>
-									    <input ng-model="dealerEdit.tel" class="form-control"  id="tel" name="tel" placeholder="โทรศัพท์บ้านหรือ Fax" type="text">
+									    <!-- <label for="tel">โทรศัพท์บ้านหรือ Fax</label> -->
+									    <input ng-model="dealerEdit.tel" class="form-control"  id="tel" name="tel" placeholder="โทรศัพท์บ้านหรือ Fax" type="text" hidden>
 									 </div>
 
 									 <div class="form-group">
@@ -147,14 +147,14 @@
 									 </div>
 
 									 <div class="form-group">
-									    <label for="address_tax">ชื่อและที่อยู่สำหรับออกใบกำกับภาษี</label>
-									    <textarea ng-model="dealerEdit.address_tax" class="form-control" id="address_tax" name="address_tax" placeholder="ชื่อและที่อยู่สำหรับออกใบกำกับภาษี"> </textarea>
+									    <!-- <label for="address_tax">ชื่อและที่อยู่สำหรับออกใบกำกับภาษี</label> -->
+									    <textarea ng-model="dealerEdit.address_tax" class="form-control" id="address_tax" name="address_tax" placeholder="ชื่อและที่อยู่สำหรับออกใบกำกับภาษี"hidden> </textarea>
 									 </div>
 
 									 <div class="form-group">
 									    <label for="tax_number">เลขประจำตัวผู้เสียภาษี</label>
-									    <input ng-model="dealerEdit.tax_number" class="form-control" id="tax_number" name="tax_number" placeholder="เลขประจำตัวผู้เสียภาษี" type="text">
-									 </div>       
+									    <input ng-model="dealerEdit.tax_number" class="form-control" id="tax_number" name="tax_number" placeholder="เลขประจำตัวผู้เสียภาษี" type="text" hidden>
+									 </div>
 						            <button  type="submit" class="btn btn-default">แก้ไข</button>
 						        </form> <!--/sign up form-->
 						        <hr>
@@ -162,8 +162,8 @@
 				                	<hr>
 				                    <div class="progress progress-striped active">
 				                    	<div class="progress-bar progress-bar-success" style="width:70%"></div>
-				                	</div>                 
-				                </div>               
+				                	</div>
+				                </div>
 					            <h4 class="text-success" ng-bind="message_prosecss"></h4>
 							</div>
 					    </div>

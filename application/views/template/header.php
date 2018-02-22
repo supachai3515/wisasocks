@@ -11,7 +11,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php echo $header['description'];?>">
-    <meta name="keyword" content="<?php echo $header['keyword'];?>" /> 
+    <meta name="keyword" content="<?php echo $header['keyword'];?>" />
     <meta name="author" content="<?php echo $header['author'];?>">
     <meta property="fb:app_id" content="204742923362459"/>
     <title><?php echo $header['title']; ?></title>
@@ -57,7 +57,7 @@
                         <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="currency">
                                 <span class="menu-lavel">
-                                    <i class="fa fa-phone"></i> 091-7824565
+                                    <!-- <i class="fa fa-phone"></i> -->
                                 </span>
                             </div>
                         </div>
@@ -67,9 +67,9 @@
                             <div class="top-menu">
                                 <nav>
                                     <ul>
-                                        <li class="current"><a href="<?php echo base_url('dealer')?>"><i class="fa fa-user" aria-hidden="true"></i> Dealer</a></li>
-                                        <li><a href="https://www.facebook.com/cyberbatt/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> FB</a></li>
-                                        <li><a href="http://line.me/ti/p/%40cyberbatt">LINE : @cyberbatt</a></li>
+                                        <li class="current"><a href="<?php echo base_url('dealer')?>"><i class="fa fa-user" aria-hidden="true"></i> Member</a></li>
+                                        <li><a href="https://www.facebook.com/wisasocks/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> FB</a></li>
+                                        <li><a href="http://line.me/ti/p/%40wisasocks">LINE : @wisasocks</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -86,7 +86,7 @@
                         <div class="col-sm-6 col-xs-12 col-md-3">
                             <div class="logo">
                                 <a href="<?php echo base_url()?>">
-                                    <img src="<?php echo base_url('theme');?>/img/logo/logo-1.png" alt="">
+                                    <img src="<?php echo base_url('theme');?>/img/logo/logo.png" alt="">
                                 </a>
                             </div>
                         </div>
@@ -111,7 +111,7 @@
                             <div class="shopping-cart">
                                 <ul>
                                     <li>
-                                    <?php 
+                                    <?php
                                         $productResult = array();
                                         $productResult  = $this->initdata_model->get_cart_data();
                                         $sumItems = 0;
@@ -128,10 +128,10 @@
                                             </span>
                                             </span>
                                         </a>
-      
+
                                         <?php if ($this->cart->contents()): ?>
                                             <div class="mini-cart-content">
-                                            
+
                                             <?php $i = 1; ?>
                                             <?php foreach($this->cart->contents() as $items): ?>
                                                 <?php echo form_hidden('rowid[]', $items['rowid']); ?>
@@ -153,8 +153,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="clear"></div>
-                                
-                                                    
+
+
                                                     <?php endif ?>
                                                 <?php endforeach ?>
                                         <?php $i++; ?>
@@ -187,16 +187,8 @@
                                 <ul>
                                     <li><a href="<?php echo base_url()?>"><i class="fa fa-home"></i></a></li>
                                     <li><a href="<?php echo base_url('products')?>">สินค้า</a></li>
-                                     <li><a href="<?php echo base_url('howtobuy')?>">ช่วยเหลือ</a>
-                                        <ul class="sub-menu">
-                                           <li><a href="<?php echo base_url('howtobuy')?>">วิธีการสั่งซื้อ</a></li>
-                                           <li><a href="<?php echo base_url('tracking')?>">การจัดส่ง</a></li>
-                                           <li><a href="<?php echo base_url('warranty')?>">การรับประกัน</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="<?php echo base_url('howtobuy')?>">วิธีการสั่งซื้อ</a></li>
                                     <li><a href="<?php echo base_url('payment')?>">แจ้งชำระเงิน</a></li>
-                                    <li><a href="<?php echo base_url('tracking')?>">ติดตามสินค้า</a></li>
-                                    <li><a href="<?php echo base_url('faq')?>">ถาม-ตอบ</a></li>
                                     <li><a href="<?php echo base_url('content')?>">บทความ</a></li>
                                     <li><a href="<?php echo base_url('contact')?>">ติดต่อเรา</a></li>
                                 </ul>
@@ -217,19 +209,10 @@
                                  <ul>
                                     <li><a href="<?php echo base_url()?>"><i class="fa fa-home"></i></a></li>
                                     <li><a href="<?php echo base_url('products')?>">สินค้า</a></li>
-                                     <li><a href="#">ช่วยเหลือ</a>
-                                        <ul>
-                                           <li><a href="<?php echo base_url('howtobuy')?>">วิธีการสั่งซื้อ</a></li>
-                                           <li><a href="<?php echo base_url('tracking')?>">การจัดส่ง</a></li>
-                                           <li><a href="<?php echo base_url('warranty')?>">การรับประกัน</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="<?php echo base_url('howtobuy')?>">วิธีการสั่งซื้อ</a></li>
                                     <li><a href="<?php echo base_url('payment')?>">แจ้งชำระเงิน</a></li>
-                                    <li><a href="<?php echo base_url('tracking')?>">ติดตามสินค้า</a></li>
-                                    <li><a href="<?php echo base_url('faq')?>">ถาม-ตอบ</a></li>
                                     <li><a href="<?php echo base_url('content')?>">บทความ</a></li>
                                     <li><a href="<?php echo base_url('contact')?>">ติดต่อเรา</a></li>
-
                                 </ul>
                             </nav>
                         </div>
@@ -239,4 +222,3 @@
         </div>
         <!-- mobile-menu-area end -->
     </header>
-    

@@ -7,7 +7,7 @@
                         <div class="col-sm-3 col-lg-3 col-md-3">
                             <div class="static-book">
                                 <div class="footer-title">
-                                    <h2>cyberbatt</h2>
+                                    <h2>wisasocks</h2>
                                 </div>
                                 <div class="footer-menu">
                                     <ul>
@@ -44,7 +44,7 @@
                                        <li><i class="fa fa-map-marker"></i>
                                        396 โซน B ซ.ลาดพร้าว 94 ถ.ศรีวรา พลับพลา วังทองหลาง กทม. 10310</li>
                                        <li><i class="fa fa-phone"></i> Mobile: 091-7824565</li>
-                                       <li><i class="fa fa-comment"></i> LINE : @cyberbatt</li>
+                                       <li><i class="fa fa-comment"></i> LINE : @wisasocks</li>
                                     </ul>
                                 </div>
                             </div>
@@ -56,13 +56,13 @@
                               </div>
                               <div class="store-content">
                                   <ul>
-                                      <li><i class="fa fa-map-marker"></i> CYBERBATT CO., LTD<br>
+                                      <li><i class="fa fa-map-marker"></i> wisasocks CO., LTD<br>
                                       2963 ซ.ลาดพร้าว 101/2 ถ.ลาดพร้าว คลองจั่น บางกะปิ กทม. 10240</li>
                                   </ul>
                               </div>
                                 <div class="store-content">
                                     <ul>
-                                        <li>เวลาทำการ Cyberbatt <br>
+                                        <li>เวลาทำการ wisasocks <br>
                                           <i class="fa fa-clock-o"></i> ทุกวัน จันทร์ - เสาร์ 9.30 - 19.00 น.</li>
                                     </ul>
                                 </div>

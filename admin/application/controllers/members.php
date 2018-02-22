@@ -145,8 +145,8 @@ class Members extends BaseController
 
                 $this->email->from($this->config->item('email_noreply'), $this->config->item('email_name'));
                 $this->email->to($result_dealer["email"]);
-                $this->email->subject('ได้ยืนยันการสมัคร Dealer เรียบร้อยแล้ว จาก '.$this->config->item('sitename'));
-                $this->email->message("ได้ยืนยันการสมัคร Dealer เรียบร้อยแล้ว จาก ".$this->config->item('sitename'));
+                $this->email->subject('ได้ยืนยันการสมัครสมาชิกเรียบร้อยแล้ว จาก '.$this->config->item('sitename'));
+                $this->email->message("ได้ยืนยันการสมัครสมาชิก เรียบร้อยแล้ว จาก ".$this->config->item('sitename'));
                 if ($this->email->send()) {
                     redirect('members/edit/'.$member_id);
                 } else {

@@ -122,7 +122,7 @@ class Po_checkout extends CI_Controller {
 
 
 			    $this->db->trans_begin();
-			    $ref_order_id = md5("cyberbatt".date("YmdHis")."cyberbatt_gen_order_id");
+			    $ref_order_id = md5("wisasocks".date("YmdHis")."wisasocks_gen_order_id");
 			    $order_id="";
 			    if($quantity == 0){
 			    	redirect('dealer_po','refresh');

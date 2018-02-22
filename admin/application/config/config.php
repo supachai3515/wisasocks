@@ -19,28 +19,28 @@ $config['base_url'] .= "://".$_SERVER['HTTP_HOST'];
 $config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 
 //Config by user
-$config['short_sitename'] = "Cyberbatt";
-$config['sitename'] = "รับซ่อม  Macbook iMac  iphone ipad ขายอะไหล่แท้ มือหนึ่งและมือสอง - cyberbatt";
-$config['tagline'] = "รับซ่อม  Macbook iMac  iphone ipad ขายอะไหล่แท้ มือหนึ่ง และมือสอง ซ่อมด่วนรอรับได้เลย เปลี่ยนชิพการ์ดจอ ลง OSX -ซ่อมหน้าจอ LED LCD เมนบอร์ดทุกอาการ";
-$config['url_img'] = "http://www.cyberbatt.com/";
-$config['no_url_img'] = "http://www.cyberbatt.com/uploads/no_image.jpg";
+$config['short_sitename'] = "wisasocks (ไซเบอร์ แบต)";
+$config['sitename'] = "ถุงเท้าวินเทจ โอสคูล SOCKS VINTAGE OLD SCHOOL - wisasocks";
+$config['tagline'] = "ถุงเท้าวินเทจ โอสคูล SOCKS VINTAGE OLD SCHOOL";
+$config['author'] = "wisasocks (วิสาซ็อคซ)";
+$config['keyword'] = "ถุงเท้าวินเทจ,ถุงเท้าผู้ชาย,ถุงเท้า,ถุงเท้าผู้หญิง";
 
-$config['email_name'] = "cyberbatt";
-$config['email_owner'] = "cyberbatt_md@hotmail.com";
-$config['email_noreply'] = "cyberbatt.fix@gmail.com";
-$config['pass_mail_noreply'] = "0917824565";
-$config['weburl'] = "http://www.cyberbatt.com/";
-$config['line_id'] = "@cyberbatt";
+$config['url_img'] = "http://wisasocks.wisadev.com/";
+$config['no_url_img'] = "http://wisasocks.wisadev.com/uploads/no_image.jpg";
+
+$config['email_name'] = "wisasocks";
+$config['email_owner'] = "supachai.wi@gmail.com";
+$config['email_noreply'] = "wisasocks.noreply@gmail.com";
+$config['pass_mail_noreply'] = "w!$@$0ck$";
+$config['weburl'] = "http://wisasocks.wisadev.com";
+$config['line_id'] = "@wisasocks";
 
 $config['payment_transfer'] = '<h4>ธนาคารกรุงเทพ</h4>
-								<p>เลขที่บัญชี : <strong>087-3-00208-3</strong> บริษัท ไซเบอร์ แบต จำกัด</p>
-								<h4>ธนาคารไทยพาณิชย์</h4>
-								<p>เลขที่บัญชี : <strong>403-8-25867-1</strong> บริษัท ไซเบอร์ แบต จำกัด</p>
+								<p>เลขที่บัญชี : <strong>120-5-14648-1</strong> มยุรี วิสาชัย</p>
 								<h4>ธนาคารกสิกร</h4>
-								<p>เลขที่บัญชี : <strong>996-2-05800-8</strong> บริษัท ไซเบอร์ แบต จำกัด</p>
-								<h4>ธนากรุงไทย</h4>
-								<p>เลขที่บัญชี : <strong>981-7-80914-5</strong> บริษัท ไซเบอร์ แบต จำกัด</p>
-
+								<p>เลขที่บัญชี : <strong>893-2-02159-6</strong> มยุรี วิสาชัย</p>
+								<h4>พร้อมเพย์</h4>
+								<p>เลขที่บัญชี : <strong>085-4414-663</strong> มยุรี วิสาชัย</p>
 								';
 
 
