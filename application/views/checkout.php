@@ -124,9 +124,9 @@
                         <a href="<?php echo base_url('cart') ?>">
                                 <i class="fa fa-angle-left"></i> กลับไปแก้ไขสินค้า
                             </a>
-                        <a class="standard-checkout" href="<?php echo base_url('checkout/tax') ?>">
+                        <!-- <a class="standard-checkout" href="<?php echo base_url('checkout/tax') ?>">
                             <span>ออกใบกำกับภาษี <i class="fa fa-file-text-o"></i></span>
-                        </a>
+                        </a> -->
 
                     <?php else: ?>
                       <a href="<?php echo base_url('cart') ?>">

@@ -50,7 +50,7 @@
                             <span class="glyphicon-status fa fa-money glyphicon-active"></span>
                             <h4>ชำระเงินเรียบร้อย</h4>
                             <?php else: ?>
-                            <span class="glyphicon-status fa fa-money"></span>
+                            <span class="fas fa-money-bill-alt"></span>
                             <h4>รอการชำระเงิน </h4>
                             <?php endif ?>
                         </div>

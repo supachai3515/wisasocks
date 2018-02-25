@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="<?php echo base_url('theme');?>/datepicker/css/bootstrap-datepicker3.css">
     <link rel="stylesheet" href="<?php echo base_url('theme');?>/datepicker/css/bootstrap-timepicker.css">
     <link rel="stylesheet" href="<?php echo base_url('theme');?>/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo base_url('theme');?>/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="<?php echo base_url('theme');?>/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="<?php echo base_url('theme');?>/css/web-fonts-with-css/css/fontawesome-all.css">
     <link rel="stylesheet" href="<?php echo base_url('theme');?>/css/owl.carousel.css">
     <link rel="stylesheet" href="<?php echo base_url('theme');?>/css/owl.theme.css">
     <link rel="stylesheet" href="<?php echo base_url('theme');?>/css/owl.transitions.css">
@@ -43,7 +44,7 @@
     <link rel="stylesheet" href="<?php echo base_url('theme');?>/css/responsive.css">
     <script src="<?php echo base_url('theme');?>/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body class="home-3" ng-app="myApp" ng-controller="mainCtrl">
+<body class="home-2" ng-app="myApp" ng-controller="mainCtrl">
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -68,8 +69,7 @@
                                 <nav>
                                     <ul>
                                         <li class="current"><a href="<?php echo base_url('dealer')?>"><i class="fa fa-user" aria-hidden="true"></i> Member</a></li>
-                                        <li><a href="https://www.facebook.com/wisasocks/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> FB</a></li>
-                                        <li><a href="http://line.me/ti/p/%40wisasocks">LINE : @wisasocks</a></li>
+                                        <li><a href="http://line.me/ti/p/%40wisasocks"><i class="fab fa-line"></i> : @wisasocks</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -79,6 +79,7 @@
             </div>
             <!-- header-top-area end -->
             <!-- header-bottom-area start -->
+            <div style="padding-bottom: 30px"></div>
             <div class="header-bottom-area">
                 <div class="container">
                     <div class="row">
@@ -189,7 +190,7 @@
                                     <li><a href="<?php echo base_url('products')?>">สินค้า</a></li>
                                     <li><a href="<?php echo base_url('howtobuy')?>">วิธีการสั่งซื้อ</a></li>
                                     <li><a href="<?php echo base_url('payment')?>">แจ้งชำระเงิน</a></li>
-                                    <li><a href="<?php echo base_url('content')?>">บทความ</a></li>
+                                    <!-- <li><a href="<?php echo base_url('content')?>">บทความ</a></li> -->
                                     <li><a href="<?php echo base_url('contact')?>">ติดต่อเรา</a></li>
                                 </ul>
                             </nav>
@@ -211,7 +212,7 @@
                                     <li><a href="<?php echo base_url('products')?>">สินค้า</a></li>
                                     <li><a href="<?php echo base_url('howtobuy')?>">วิธีการสั่งซื้อ</a></li>
                                     <li><a href="<?php echo base_url('payment')?>">แจ้งชำระเงิน</a></li>
-                                    <li><a href="<?php echo base_url('content')?>">บทความ</a></li>
+                                    <!-- <li><a href="<?php echo base_url('content')?>">บทความ</a></li> -->
                                     <li><a href="<?php echo base_url('contact')?>">ติดต่อเรา</a></li>
                                 </ul>
                             </nav>

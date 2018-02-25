@@ -25,7 +25,7 @@
                             <strong class=""><?php echo $order['status_name']; ?></strong>
                         </p>
                     </div>
-                   
+
                 <?php else: ?>
                      <div class="col-md-4">
                         <p class="text-center">
@@ -41,13 +41,13 @@
                             <?php if ($order['order_status_id']>1): ?>
                             <span class="fa-stack fa-5x">
                                   <i class="fa fa-circle fa-stack-2x text-success-new"></i>
-                                  <i class="fa fa-money fa-stack-1x fa-inverse"></i>
+                                  <i class="fas fa-money-bill-alt fa-stack-1x fa-inverse"></i>
                                 </span>
                             <strong class="text-success-new">ชำระเงินสำเร็จ</strong>
                             <?php else: ?>
                             <span class="fa-stack fa-5x">
                                   <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-money fa-stack-1x fa-inverse" style="color: #FFF;"></i>
+                                  <i class="fas fa-money-bill-alt fa-stack-1x fa-inverse" style="color: #FFF;"></i>
                                 </span>
                             <strong class="">รอการชำระเงิน</strong>
                             <?php endif ?>
@@ -70,9 +70,9 @@
                             <?php endif ?>
                         </p>
                     </div>
-                    
+
                 <?php endif ?>
-                   
+
                 </div>
                 <div style="padding-bottom: 30px;"></div>
                 <div class="row">
@@ -96,7 +96,7 @@
                                 <?php if ($order['is_invoice']=="1"): ?>
                                     <p></p>
                                     <a target="_blank" class="btn btn-info" href="<?php echo base_url('fullinvoice/'.$order['ref_id']) ?>" role="button">ใบกำกับภาษี</a>
-                                    
+
                                 <?php endif ?>
                             </div>
                         </div>

@@ -125,14 +125,14 @@
                                         <div class="btn-group" style="padding-bottom:10px;">
                                             <div class="shere-button">
                                                 <a href="https://twitter.com/home?status=<?php echo base_url('product/'.$product_detail['slug']) ?>" target="_blank">
-                                                    <i class="fa fa-twitter"></i> Tweet
+                                                    <i class="fab fa-twitter"></i> Tweet
                                                 </a>
 
                                                 <a href="https://www.facebook.com/sharer/sharer.php?u="<?php echo base_url('product/'.$product_detail['slug']); ?>" target="_blank">
-                                                    <i class="fa fa-facebook"></i> Share
+                                                    <i class="fab fa-facebook"></i> Share
                                                 </a>
                                                 <a href="https://plus.google.com/share?url=<?php echo base_url('product/'.$product_detail['slug']) ?>" target="_blank">
-                                                    <i class="fa fa-google-plus"></i> Google+
+                                                    <i class="fab fa-google-plus"></i> Google+
                                                 </a>
                                             </div>
                                         </div>

@@ -152,7 +152,7 @@
 									 </div>
 
 									 <div class="form-group">
-									    <label for="tax_number">เลขประจำตัวผู้เสียภาษี</label>
+									    <!-- <label for="tax_number">เลขประจำตัวผู้เสียภาษี</label> -->
 									    <input ng-model="dealerEdit.tax_number" class="form-control" id="tax_number" name="tax_number" placeholder="เลขประจำตัวผู้เสียภาษี" type="text" hidden>
 									 </div>
 						            <button  type="submit" class="btn btn-default">แก้ไข</button>

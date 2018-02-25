@@ -19,7 +19,7 @@ $config['base_url'] .= "://".$_SERVER['HTTP_HOST'];
 $config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 
 //Config by user
-$config['short_sitename'] = "wisasocks (ไซเบอร์ แบต)";
+$config['short_sitename'] = "wisasocks (วิสาช็อคซ)";
 $config['sitename'] = "ถุงเท้าวินเทจ โอสคูล SOCKS VINTAGE OLD SCHOOL - wisasocks";
 $config['tagline'] = "ถุงเท้าวินเทจ โอสคูล SOCKS VINTAGE OLD SCHOOL";
 $config['author'] = "wisasocks (วิสาซ็อคซ)";
@@ -41,7 +41,7 @@ $config['payment_transfer'] = '<h4>ธนาคารกรุงเทพ</h4>
 								<h4>ธนาคารกสิกร</h4>
 								<p>เลขที่บัญชี : <strong>893-2-02159-6</strong> มยุรี วิสาชัย</p>
 								<h4>พร้อมเพย์</h4>
-								<p>เลขที่บัญชี : <strong>085-4414-663</strong> มยุรี วิสาชัย</p>
+								<p>เบอร์โทร : <strong>085-4414-663</strong> มยุรี วิสาชัย</p>
 								';
 
 /*

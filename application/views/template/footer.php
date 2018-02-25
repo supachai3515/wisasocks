@@ -4,6 +4,20 @@
             <div class="container">
                 <div class="row">
                     <div class="footer">
+
+                      <div class="col-sm-3 col-lg-3 col-md-3">
+                           <div class="store-information-area">
+                              <div class="footer-title">
+                                  <h2>wisasocks</h2>
+                              </div>
+                              <div class="store-content">
+                                  <ul>
+                                     <li>ถุงเท้าเแฟชั่น ลายโบฮีเมียน (Bohemian) By. wisasocks (วิสาซ็อคซ) ตอบโจทย์คนชอบการแต่งตัวสไตล์ คลาสสิก วิลเทจโอลสคูลเป็นอย่างดี</li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+
                         <div class="col-sm-3 col-lg-3 col-md-3">
                             <div class="static-book">
                                 <div class="footer-title">
@@ -19,53 +33,45 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3 col-lg-3 col-md-3">
-                            <div class="static-book">
-                                <div class="footer-title">
-                                    <h2>ตรวจสอบสถานะจัดส่งสินค้า</h2>
-                                </div>
-                                <div class="footer-menu">
-                                    <ul>
-                                        <li ng-repeat="shipping in shipping_method"><a href="<?php echo base_url('tracking')?>">{{shipping.name}}</a></li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
 
 
-                        <div class="col-sm-3 col-lg-3 col-md-3">
-                             <div class="store-information-area">
-                                <div class="footer-title">
-                                    <h2>รับสินค้าได้ที่</h2>
-                                </div>
-                                <div class="store-content">
-                                    <ul>
-                                       <li><i class="fa fa-map-marker"></i>
-                                       396 โซน B ซ.ลาดพร้าว 94 ถ.ศรีวรา พลับพลา วังทองหลาง กทม. 10310</li>
-                                       <li><i class="fa fa-phone"></i> Mobile: 091-7824565</li>
-                                       <li><i class="fa fa-comment"></i> LINE : @wisasocks</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-sm-3 col-lg-3 col-md-3">
                             <div class="store-information-area">
                               <div class="footer-title">
-                                  <h2>ส่งสินค้าเคลมได้ที่</h2>
+                                  <h2>ติดต่อเรา</h2>
                               </div>
                               <div class="store-content">
                                   <ul>
-                                      <li><i class="fa fa-map-marker"></i> wisasocks CO., LTD<br>
-                                      2963 ซ.ลาดพร้าว 101/2 ถ.ลาดพร้าว คลองจั่น บางกะปิ กทม. 10240</li>
+                                      <li><i class="fa fa-map-marker"></i> wisasocks
+                                      ที่อยู่ 79/55 หมู่ 1 ตำบลศาลากลาง อำเภอบางกรวย จังหวัดนนทบุรี 11130</li>
+                                      <li><i class="fa fa-phone"></i> Mobile: 091-7750586</li>
+                                      <li><i class="fab fa-line"></i> LINE : @wisasocks</li>
                                   </ul>
                               </div>
-                                <div class="store-content">
-                                    <ul>
-                                        <li>เวลาทำการ wisasocks <br>
-                                          <i class="fa fa-clock-o"></i> ทุกวัน จันทร์ - เสาร์ 9.30 - 19.00 น.</li>
-                                    </ul>
-                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 col-lg-3 col-md-3">
+                            <div class="store-information-area">
+                              <div class="footer-title">
+                                  <h2>Facebook</h2>
+                              </div>
+                              <div class="store-content">
+
+                                <div id="fb-root"></div>
+                                  <script>(function(d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s); js.id = id;
+                                    js.src = "//connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v2.6&appId=615663091936505";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                  }(document, 'script', 'facebook-jssdk'));</script>
+                                      <div class="add-banner-carsuol">
+                                          <div class="fb-page" data-href="https://www.facebook.com/wisasocks/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                              <blockquote cite="https://www.facebook.com/wisasocks/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/wisasocks/">wisasocks</a></blockquote>
+                                          </div>
+                                      </div>
+                              </div>
                             </div>
                         </div>
                     </div>

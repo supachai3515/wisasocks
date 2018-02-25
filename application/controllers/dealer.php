@@ -5,7 +5,7 @@ class Dealer extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
-		//call model inti 
+		//call model inti
 		$this->load->model('initdata_model');
 		$this->load->library('pagination');
 		$this->load->model('dealer_model');
@@ -17,15 +17,15 @@ class Dealer extends CI_Controller {
 		if($this->session->userdata('is_logged_in')){
 			$data['orderList'] =  $this->dealer_model->get_orderList($this->session->userdata('username'));
 			$data['dealerInfo'] =  $this->dealer_model->get_dealerInfo($this->session->userdata('username'));
-			
+
 		}
 
-		//header meta tag 
+		//header meta tag
 		$data['header'] = array('title' => 'สมาชิก dealer | '.$this->config->item('sitename'),
 								'description' => 'สมาชิก dealer | '.$this->config->item('tagline'),
 								'author' => $this->config->item('author'),
 								'keyword' => 'สมาชิก dealer | '.$this->config->item('tagline') );
-		//get menu database 
+		//get menu database
 		$this->load->model('initdata_model');
 		$data['menus_list'] = $this->initdata_model->get_menu();
 		$data['menu_type'] = $this->initdata_model->get_type();
@@ -45,7 +45,7 @@ class Dealer extends CI_Controller {
 
 		$phone ="";
 		$nid = "";
-		$addressVat =""; 
+		$addressVat ="";
 
 		if(isset($value->phone))
 		{
@@ -67,7 +67,7 @@ class Dealer extends CI_Controller {
 				return;
 
 		}
-		
+
 
 		date_default_timezone_set("Asia/Bangkok");
 			$data_member = array(
@@ -79,7 +79,7 @@ class Dealer extends CI_Controller {
 				'email' => $value->email,
 				'tel' => $phone,
 				'mobile' => $value->mobile,
-				'verify' => '0',
+				'verify' => '1',
 				'tax_number' => $nid,
 				'address_receipt' => $value->address,
 				'address_tax' => $addressVat,
@@ -95,9 +95,9 @@ class Dealer extends CI_Controller {
 				$data['error'] = true;
 				$data['message'] = $value->email.' มีการสมัครแล้ว';
 				print json_encode($data);
-				//$where = "id = '".$sku_str."'"; 
+				//$where = "id = '".$sku_str."'";
 				//$this->db->update("product_type", $data_product, $where);
-			
+
 			}
 			else {
 
@@ -123,11 +123,11 @@ class Dealer extends CI_Controller {
 		        $this->email->subject($sub);
 		        $this->email->message($this->sendmail_dealer($insert_id));
 		        $this->email->send();
-			     
+
 				//$insert_id = $this->db->insert_id();
 		   		//return  $insert_id;
 			}
-	
+
 	}
 	function sendmail_dealer($dealer_id)
 	{
@@ -147,17 +147,17 @@ class Dealer extends CI_Controller {
 			 	<strong>ที่อยู่จัดส่งสินค้า : </strong>	'.$result_dealer['address_receipt'].'<br/>
 			 	<strong>ที่อยู่ออกใบกำกับภาษี : </strong>	'.$result_dealer['address_tax'].'<br/>
 			 	<strong>วันที่สมัคร : </strong>	'.$result_dealer['date'].'<br/>
-			 	<h4>หลักฐานทะเบียนการค้า</h4> 
+			 	<h4>หลักฐานทะเบียนการค้า</h4>
                 <p>เอกสารที่ต้องใช้ ให้แนปไฟล์ส่งมาที่<br><span> Email: '.$this->config->item('email_owner').'</span></p>
                   <ul>
                   <li> 1. สำเนาใบทะเบียนพาณิชย์ ให้เซ็นชื่อสำเนาถูกต้อง 1 ฉบับ</li>
                     <li> 2. สำเนาบัตรประชาชน ให้เซ็นชื่อสำ เนาถูกต้อง 1 ฉบับ</li>
                   </ul>
                   <div style=" background-color: #eaeaea;">"รอการตรวจสอบจากทางร้าน ถ้าตรวจสอบแล้ว จะแจ้งทางอีเมลล์"
-                  </div> 
+                  </div>
 			 </p>
 		 ';
-	
+
 		return $result;
 
 	}
@@ -186,7 +186,7 @@ class Dealer extends CI_Controller {
 			$row = $query->row_array();
 			if($row['connt_id']==1)
 			{
-				$where = "username = '".$this->session->userdata('username')."'"; 
+				$where = "username = '".$this->session->userdata('username')."'";
 				$this->db->update("members", $data_member, $where);
 			}
 			else {
@@ -197,7 +197,7 @@ class Dealer extends CI_Controller {
 				//$insert_id = $this->db->insert_id();
 		   		//return  $insert_id;
 			}
-			
+
 		}
 
 	}
@@ -210,11 +210,11 @@ class Dealer extends CI_Controller {
 			$this->session->set_flashdata('msg', 'ชื่อผู้ใช้หรือรหัสผ่านไม่สามารถว่างได้');
 			redirect('dealer');
 		}
-				
+
 		$this->db->where('username', $this->input->post('username'));
 		$this->db->where('password', $this->input->post('password'));
 		$query = $this->db->get("members");
-		
+
 		if($query->num_rows() == 1)
 		{
 			$dealerInfo =  $this->dealer_model->get_dealerInfo($this->input->post('username'));
@@ -230,7 +230,7 @@ class Dealer extends CI_Controller {
 			$this->session->set_userdata($data);
 			redirect('dealer');
 		}
-		else 
+		else
 		{
 			$this->session->set_flashdata('msg', 'ชื่อผู้ใช้และรหัสผ่านไม่ถูกต้อง');
 			redirect('dealer');
@@ -245,7 +245,7 @@ class Dealer extends CI_Controller {
 		print json_encode($data['dealerInfo']);
 
 	}
-	
+
 	public function logout()
 	{
 		$this->session->sess_destroy();
