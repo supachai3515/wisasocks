@@ -33,7 +33,7 @@ $config['email_name'] = "wisasocks";
 $config['email_owner'] = "supachai.wi@gmail.com";
 $config['email_noreply'] = "wisasocks.noreply@gmail.com";
 $config['pass_mail_noreply'] = "w!$@$0ck$";
-$config['weburl'] = "http://wisasocks.wisadev.com";
+$config['weburl'] = "http://wisasocks.wisadev.com/";
 $config['line_id'] = "@wisasocks";
 
 $config['payment_transfer'] = '<h4>ธนาคารกรุงเทพ</h4>

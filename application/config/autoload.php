@@ -63,7 +63,7 @@ $autoload['libraries'] = array('database', 'session', 'cart');
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url', 'form');
+$autoload['helper'] = array('url', 'form','fn');
 
 
 /*
@@ -95,7 +95,8 @@ $autoload['config'] = array();
 |
 */
 
-$autoload['language'] = array();
+$autoload['language'] = array('english');
+
 
 
 /*

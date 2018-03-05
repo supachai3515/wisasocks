@@ -5,6 +5,10 @@ class Initdata_model extends CI_Model {
 
 	public function __construct() {
 	    parent::__construct();
+			
+			if($this->session->userdata('lang') != null){
+				$this->lang->load($this->session->userdata('lang') , $this->session->userdata('lang'));
+			}
 	}
 
 	public function get_menu()

@@ -188,6 +188,7 @@
     <?php echo $this->load->view("template/app");?>
     <?php if(isset($script)){echo $script;}?>
     <?php if(isset($script_file)){echo $this->load->view($script_file); }?>
+
 </body>
 
 </html>

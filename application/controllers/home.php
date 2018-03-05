@@ -62,6 +62,12 @@ class Home extends CI_Controller {
 
 		return $excerpt;
 	}
+
+	public function change_lang($type)
+	{
+		$this->session->set_userdata('lang',$type);
+		redirect("","refresh");
+	}
 }
 
 /* End of file home.php */

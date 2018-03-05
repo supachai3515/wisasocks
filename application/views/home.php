@@ -1,5 +1,9 @@
 <div class="slider-area">
   <div class="container">
+ <a href="<?php echo base_url('home/change_lang/thailand') ?>"> Thai</a>
+  <a href="<?php echo base_url('home/change_lang/english') ?>"> English</a>
+    <p><?php echo lable('hello'); ?></p>
+
         <div class="bend niceties preview-2">
             <div id="ensign-nivoslider-2" class="slides">
             <?php foreach ($slider_list as $slider): ?>

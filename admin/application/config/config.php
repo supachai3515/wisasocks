@@ -19,7 +19,7 @@ $config['base_url'] .= "://".$_SERVER['HTTP_HOST'];
 $config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 
 //Config by user
-$config['short_sitename'] = "wisasocks (ไซเบอร์ แบต)";
+$config['short_sitename'] = "wisasocks (วิสาช็อคซ)";
 $config['sitename'] = "ถุงเท้าวินเทจ โอสคูล SOCKS VINTAGE OLD SCHOOL - wisasocks";
 $config['tagline'] = "ถุงเท้าวินเทจ โอสคูล SOCKS VINTAGE OLD SCHOOL";
 $config['author'] = "wisasocks (วิสาซ็อคซ)";
@@ -32,7 +32,7 @@ $config['email_name'] = "wisasocks";
 $config['email_owner'] = "supachai.wi@gmail.com";
 $config['email_noreply'] = "wisasocks.noreply@gmail.com";
 $config['pass_mail_noreply'] = "w!$@$0ck$";
-$config['weburl'] = "http://wisasocks.wisadev.com";
+$config['weburl'] = "http://wisasocks.wisadev.com/";
 $config['line_id'] = "@wisasocks";
 
 $config['payment_transfer'] = '<h4>ธนาคารกรุงเทพ</h4>
